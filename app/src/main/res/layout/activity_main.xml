@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    app:id="@+id/main_view"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+
+    app:layout_width="match_parent"
+    app:layout_height="match_parent"
+ >
+
+    <TextView
+        app:id="@+id/play_pause_button"
+        app:layout_width="match_parent"
+        app:layout_height="wrap_content"
+        app:layout_alignParentBottom="true"
+        app:background="@drawable/play_stop_button"
+        app:checked="true"
+        app:clickable="true"
+        app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        app:text="PLAY"
+        app:textColor="#ffffff"
+        app:textSize="40sp" />
+
+    <RelativeLayout
+        app:id="@+id/banner_wrapper"
+        app:layout_width="wrap_content"
+        app:layout_height="wrap_content"
+        app:layout_above="@id/play_pause_button"
+        app:layout_centerHorizontal="true"
+        app:layout_marginBottom="0dp" />
+    <TextView
+        app:id="@+id/record"
+        app:layout_width="match_parent"
+        app:layout_height="wrap_content"
+        />
+
+
+
+    <ImageButton
+        app:id="@+id/water_button"
+        app:layout_width="wrap_content"
+        app:layout_height="wrap_content"
+        app:layout_above="@+id/banner_wrapper"
+        app:layout_centerHorizontal="true"
+        app:layout_marginBottom="15dp"
+        app:src="@drawable/water_button" />
+
+    <TextView
+        app:id="@+id/hint_text_view"
+        app:layout_width="match_parent"
+        app:layout_height="wrap_content"
+        app:layout_above="@id/water_button"
+        app:layout_marginBottom="15dp"
+        app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        app:text="Hint" />
+
+    <LinearLayout
+        app:layout_width="match_parent"
+        app:layout_height="wrap_content"
+        app:layout_above="@id/hint_text_view"
+        app:layout_marginBottom="20dp"
+        app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        app:orientation="horizontal">
+
+        <TextView
+            app:id="@+id/frequency_text_view"
+            app:layout_width="wrap_content"
+            app:layout_height="wrap_content"
+            app:text="10000"
+            app:textSize="100dp" />
+
+        <TextView
+            app:id="@+id/textView"
+            app:layout_width="wrap_content"
+            app:layout_height="wrap_content"
+            app:layout_gravity="center"
+            app:text="Hz"
+            app:textColor="#aa02b4d4"
+            app:textSize="50dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
